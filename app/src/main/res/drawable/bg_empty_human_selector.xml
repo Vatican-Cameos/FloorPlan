@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android" >
     <item
-        android:drawable="@mipmap/man"
+        android:drawable="@mipmap/location_pin"
         android:state_selected="true"
         />
     <item
-        android:drawable="@drawable/rectangle" />
-
+        android:drawable="@android:color/transparent" />
 </selector>

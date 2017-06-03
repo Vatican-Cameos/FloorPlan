@@ -1,130 +1,50 @@
-<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/gl"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="horizontal"
-    android:rowCount="6"
-    android:background="@drawable/rectangle"
-    android:columnCount="6"
-    android:layout_centerHorizontal="true"
-    android:padding="4dp">
+    android:layout_height="match_parent">
 
-    <!--<ImageView
-        android:id="@+id/iv00"
-        android:layout_row="0"
-        android:layout_column="0"
 
-        android:layout_rowWeight="1"
-        android:layout_columnWeight="1"
-        android:padding="25dp"
-        android:scaleType="centerCrop"
-        android:text="[0,0]"
-        android:textSize="25dp"
-        android:background="@drawable/bg_empty_human_selector"
-        />
+
+    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/gl"
+        android:layout_centerVertical="true"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:background="@drawable/rectangle"
+        android:columnCount="10"
+        android:orientation="horizontal"
+        android:padding="4dp"
+        android:rowCount="10">
+
+    </GridLayout>
 
     <ImageView
-        android:id="@+id/iv01"
-        android:layout_row="0"
-        android:layout_column="1"
-
-        android:layout_rowWeight="1"
-        android:layout_columnWeight="1"
-        android:scaleType="centerCrop"
-        android:padding="25dp"
-        android:text="[0,1]"
-        android:textSize="25dp"
-        android:background="@drawable/bg_empty_human_selector"
-        />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/gl"
+        android:src="@mipmap/antenna"
+        android:layout_centerVertical="true" />
 
     <ImageView
-        android:id="@+id/iv02"
-        android:layout_row="0"
-        android:layout_column="2"
-        android:layout_rowWeight="1"
-        android:layout_columnWeight="1"
-        android:scaleType="centerCrop"
-        android:padding="25dp"
-        android:text="[0,2]"
-        android:textSize="25dp"
-        android:background="@drawable/bg_empty_human_selector"
-        />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/gl"
+        android:src="@mipmap/antenna"
+        android:layout_centerVertical="true"/>
 
     <ImageView
-        android:id="@+id/iv10"
-        android:layout_row="1"
-        android:layout_column="0"
-        android:layout_rowWeight="1"
-        android:layout_columnWeight="1"
-        android:scaleType="centerCrop"
-        android:padding="25dp"
-        android:text="[1,0]"
-        android:textSize="25dp"
-        android:background="@drawable/bg_empty_human_selector"
-        />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/gl"
+        android:src="@mipmap/antenna"
+        android:layout_centerHorizontal="true"/>
 
     <ImageView
-        android:id="@+id/iv11"
-        android:layout_row="1"
-        android:layout_column="1"
-        android:layout_rowWeight="1"
-        android:layout_columnWeight="1"
-        android:scaleType="centerCrop"
-        android:text="[1,1]"
-        android:textSize="25dp"
-        android:padding="25dp"
-        android:background="@drawable/bg_empty_human_selector"
-        />
-
-    <ImageView
-        android:id="@+id/iv12"
-        android:layout_row="1"
-        android:layout_column="2"
-
-        android:layout_rowWeight="1"
-        android:layout_columnWeight="1"
-        android:text="[1,2]"
-        android:textSize="25dp"
-        android:padding="25dp"
-        android:background="@drawable/bg_empty_human_selector"
-        />
-
-    <ImageView
-        android:id="@+id/iv20"
-        android:layout_row="2"
-        android:layout_column="0"
-
-        android:layout_rowWeight="1"
-        android:layout_columnWeight="1"
-        android:scaleType="centerCrop"
-        android:text="[2,0]"
-        android:textSize="25dp"
-        android:padding="25dp"
-        android:background="@drawable/bg_empty_human_selector"
-        />
-
-    <ImageView
-        android:id="@+id/iv21"
-        android:layout_row="2"
-        android:layout_column="1"
-        android:scaleType="centerCrop"
-        android:layout_rowWeight="1"
-        android:layout_columnWeight="1"
-        android:text="[2,1]"
-        android:textSize="25dp"
-        android:padding="25dp"
-        android:background="@drawable/bg_empty_human_selector"
-        />
-
-    <ImageView
-        android:id="@+id/iv22"
-        android:layout_row="2"
-        android:layout_column="2"
-        android:scaleType="centerCrop"
-        android:layout_rowWeight="1"
-        android:layout_columnWeight="1"
-        android:padding="25dp"
-        android:background="@drawable/bg_empty_human_selector"
-        />-->
-
-</GridLayout>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/gl"
+        android:src="@mipmap/antenna"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
